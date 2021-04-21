@@ -259,11 +259,10 @@ Although not all of this data is actually stored in the dataset, much of it can 
  
  
  
-Part 3 
+Part 3 Setup for Machine Learning algorithm
  
-Since I do not have the time to actually implement the ML algorithm I will explain my process.  
  
-We know that certain skills are correlated with certain industries in a way that is possibly linearly related.  
+Certain skills are correlated with certain industries in a way that is possibly linearly related.  
 For example, the technology sector will have a much higher demand for technical skills like programming.  In order to calculate the strength of the correlation between skills (as keywords) and industries, we can look at the frequency at which jobs in some industries demand said skills.  From this we can find a value for the correlation.  
  
 Example  (Made up numbers)
@@ -276,20 +275,16 @@ The employability of someone with a programming skill set will strongly correlat
 If the technology industry is increasing in employment numbers, we know that someone with a programming skill set has good chances of finding employment.  
  
  
+To find how different skills correlate to industries, we could form a correlation matrix out of our dataset.  
  
+There are many methods for finding the correlation between linearly related variables, including linear regressions and Pearson's correlation.  (Bag of words can be used for pre-processing text data into numerical form)
  
- 
- 
-To find how different skills correlate to industries, we could form a correlation matrix out of our dataset.  The issue with this is that our attributes do not have numerical values. Unless we do more processing.  
- 
-There are many methods for finding the correlation between linearly related variables, including linear regressions and Pearson's correlation.  
- 
-Since it may be hard to figure out the actual correlations, and a machine learning process is required, another method of finding a correlation may be by using neural networks. 
+Another method of finding a correlation may be by using neural networks. 
  
 A neural network that predicts industry based on all the attributes (except industry)  in the tuples listed in our final dataset.  The expected output would be the industry from the same tuple. 
  
-Feed forward Neural Network with randomly initialized weights. 
-The error function for the output would be zero when the expected output matches the guessed output and one when it doesn't.  Through multiple iterations of forward and backwards propagation, the weights would be adjusted for more accurate outputs, based on the error gradients.  This is the learning process.  
+We can create a feed forward Neural Network with randomly initialized weights. (See Neural_Network.py)
+The error function for the output would be zero when the expected output matches the predicted output and one when it doesn't.  Through multiple iterations of forward and backwards propagation, the weights would be adjusted for optimal predictions.  This is the learning process.  
  
 
  
