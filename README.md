@@ -32,6 +32,7 @@ This will include talking about the “learning process”
  
  
 Part 1 
+
 In order to visualize the data we must first understand the data itself.  
  
 Examining the dataset we may see that all the data inputs are formed as classifications.  For example, age is classified in 3 ways: ages 15-24, ages 25-54, and age 55 and over.  
@@ -64,17 +65,10 @@ and labourdata1.industry=labourdata2.industry and labourdata1.year=labourdata2.y
 and labourdata1.sex=labourdata2.sex and labourdata1.employmentstatus=labourdata2.employmentstatus and labourdata1.province="Ontario" #province can be swapped, all provinces have same number of data tuples
 LIMIT 10000
  
- 
- 
- 
- 
- 
- 
- 
 
 
 No data loss from selecting only those attributes
-We may delete other attributes and store this much more simple schema since they have redundant information
+Delete other attributes and store this much more simple schema since they have redundant information
  
 1620 results for each province, same as in other query
  
