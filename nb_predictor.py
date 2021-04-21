@@ -6,8 +6,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import precision_recall_fscore_support
 from sklearn.metrics import classification_report
 
-input_file_training = "./ant-1.9.2.csv"
-input_file_test = "./ant-1.9.3.csv"
+input_file_training = ""#place training file here
+input_file_test = ""#test file here
 
 # load the training data as a matrix
 dataset = pd.read_csv(input_file_training, header=0)
