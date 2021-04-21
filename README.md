@@ -297,7 +297,7 @@ We could make a neural network that predicts industry based on all the attribute
 We could do a feed forward Neural Network with randomly initialized weights. 
 The error function for the output would be zero when the expected output matches the guessed output and one when it doesn't.  Through multiple iterations of forward and backwards propagation, the weights would be tweaked for more accurate outputs, based on the error gradients.  This is the learning process.  
  
-I do not have experience with text processing for Neural networks however I believe the appropriate Neural Network for text processing is a Recurrent Neural Network.  
+
  
  
  
