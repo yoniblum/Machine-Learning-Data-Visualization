@@ -292,10 +292,10 @@ There are many methods for finding the correlation between linearly related vari
  
 Since it may be hard to figure out the actual correlations, and a machine learning process is required, another method of finding a correlation may be by using neural networks. 
  
-We could make a neural network that predicts industry based on all the attributes (except industry)  in the tuples listed in our final dataset.  The expected output would be the industry from the same tuple. 
+A neural network that predicts industry based on all the attributes (except industry)  in the tuples listed in our final dataset.  The expected output would be the industry from the same tuple. 
  
-We could do a feed forward Neural Network with randomly initialized weights. 
-The error function for the output would be zero when the expected output matches the guessed output and one when it doesn't.  Through multiple iterations of forward and backwards propagation, the weights would be tweaked for more accurate outputs, based on the error gradients.  This is the learning process.  
+Feed forward Neural Network with randomly initialized weights. 
+The error function for the output would be zero when the expected output matches the guessed output and one when it doesn't.  Through multiple iterations of forward and backwards propagation, the weights would be adjusted for more accurate outputs, based on the error gradients.  This is the learning process.  
  
 
  
