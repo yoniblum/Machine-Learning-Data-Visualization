@@ -10,7 +10,7 @@ Suggest in detail, how you would train these two data sets over time and what ma
  
 Method
  
-The first step in tackling this type of challenge is to divide the problem into subproblems.  
+ 
 This challenge consists of a few subproblems.  
 
 
